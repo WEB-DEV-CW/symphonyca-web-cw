@@ -4,6 +4,7 @@
     font-family: 'Yomogi', cursive;
   }
 
+  /* page body design */
   body{
     background-image: url("./presentation.jpg");
     background-repeat: no-repeat;
@@ -11,6 +12,7 @@
     background-size: cover ;
   }
 
+  /* logo design */
   img{
     
     margin-top: 50px;
@@ -19,6 +21,7 @@
     margin-right: auto;
   }
 
+  /* details design */
   p{
     font-size: 2rem;
     text-align: center;
