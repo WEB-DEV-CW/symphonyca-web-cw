@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        WELCOME TO THE MUSICAL QUIZ
+    </title>
+    <link rel="stylesheet" type="text/css" href="student3_quiz.css">
+    <link rel="stylesheet" href="./header&footer/student2_mainpage.css">
+    
+</head>
+
+<body>
+    <img src="./header&footer/Logo.png" alt="Image Load Error" width="100" height="50">
+        
+
+      
+    
+
+    <ul class="menu">
+
+        <li> <a href="student2_mainpage.html" data-hover="HOME">HOME</a></li>
+        <li><a href="student2_queryform.html" data-hover="FEEDBACK">FEEDBACK</a></li>
+        <li><a href="student1_products.html" data-hover="Products">Products</a></li>
+        <li> <a href="students4_diagram.html" data-hover="Sitemap">Sitemap</a></li>
+        <li> <a href="student3_quiz.html" data-hover="Quiz Challenge">Quiz Challenge</a></li>
+        <li> <a href="students4_thumbnail.html" data-hover="GALLERY">GALLERY</a> </li>
+        <li> <a href="details.html" data-hover="Student Details">Student Details</a></li>
+
+    </ul>
+    <div class="center-box">
+
+
+        <h2>WELCOME TO THE <b>SYMPHONICA</b> MUSICAL QUIZ</h2>
+        <label  id="timer">00:00:00</label>
+        <div id="infobox">
+            <ol>
+                <li> There are <b>10</b> questions in this quiz.</li>
+                <li> You have one minute to complete the quiz</li>
+                <li>You wiil get <b>2</b> marks for each correct answer and <b>-1</b> for each wrong answer</li>
+            </ol>
+            <p><button class="primary-button" onclick="startQuiz();">Start Quiz</button></p>
+        </div>
+        
+        <div id="musicquiz">
+        <form name="quiz" id="quiz">
+            <div class="quz-box" >
+                <p><b>Q1</b> Which day is world music day?</p>
+                <p><input type="radio" name="question1" id="may 6" value="MAY 6"> A. May 6</p>
+                <p><input type="radio" name="question1" id="july 8" value="JULY 8"> B. July 8</p>
+                <p><input type="radio" name="question1" id="june 21" value="JUNE 21">C. June 21</p>
+                <p><input type="radio" name="question1" id="feb 7" value="FEB 7"> D.Feb 7</p>
+            </div>
+            <div class="quz-box">
+                <p><b>Q2</b> Which indian musician won the <b> OSCAR</b> award?</p>
+                <p><input type="radio" name="question2" id="a.r rahman" value="A.R RAHMAN"> A. A.R Rahman</p>
+                <p><input type="radio" name="question2" id="dsp" value="DSP"> B. DSP</p>
+                <p><input type="radio" name="question2" id=" g.v pragash" value="G.V PRAGASH">C. G.V Pragash</p>
+                <p><input type="radio" name="question2" id="aadhi" value="AADHI">D. Aadhi</p>
+            </div>
+            <div class="quz-box">
+                <p><b>Q3</b> How many musical notes are in <b>CARNATIC MUSIC</b>?</p>
+                <p><input type="radio" name="question3" id="6" value="6"> A. 6</p>
+                <p><input type="radio" name="question3" id="8" value="8">B. 8</p>
+                <p><input type="radio" name="question3" id="1" value="21">C. 21</p>
+                <p><input type="radio" name="question3" id=" 7" value="7"> D. 7</p>
+            </div>
+            <div class="quz-box">
+                <p><b>Q4</b> What is the national instrument of Srilanka?</p>
+                <p><input type="radio" name="question4" id="ravanahatha" value="RAVANAHATHA"> A. Rravanahatha </p>
+                <p><input type="radio" name="question4" id="piano" value="PIANO">B. Piona</p>
+                <p><input type="radio" name="question4" id="guiter" value="GUITER">C. Guiter</p>
+                <p><input type="radio" name="question4" id="drumb" value="DRUMB"> D. Drumb</p>
+            </div>
+            <div class="quz-box">
+                <p><b>Q5</b> Who is the Srilanka's most celebrated music icon?</p>
+                <p><input type="radio" name="question5" id="clarence wijenwarene"
+                        value="CLARENCE WIJENWARDENA">A. Clarence Wijenwarene </p>
+                <p><input type="radio" name="question5" id="victor ratanayake" value="VICTOR RATANAYAKE">B. Victor Ratanayake</p>
+                <p><input type="radio" name="question5" id="iraj" value="IRAJ">C. Iraj</p>
+                <p><input type="radio" name="question5" id="ivor dennis" value="IVOR DENNIS">D. Ivor Dennis</p>
+            </div>
+            <div class="quz-box">
+                <p><b>Q6</b> What country produces the most music?</p>
+                <p><input type="radio" name="question6" id="United States" value="UNITED STATES">A. United States </p>
+                <p><input type="radio" name="question6" id="	japan" value="JAPAN">B. Japan</p>
+                <p><input type="radio" name="question6" id="india" value="INDIA">C. India</p>
+                <p><input type="radio" name="question6" id="china" value="CHINA"> D. Cnina</p>
+            </div>
+            <div class="quz-box">
+                <p><b>Q7</b> What was disney's frist broadway musical?</p>
+                <p><input type="radio" name="question7" id="beauty and the beast" value="BEAUTY AND THE BEAST"> A. Beauty and the beast</p>
+                <p><input type="radio" name="question7" id="ring and round" value="RING AND ROUND">B. Ring and round</p>
+                <p><input type="radio" name="question7" id="calm now music" value="CALM NOW MUSIC">C. Calm now music</p>
+                <p><input type="radio" name="question7" id="new city" value="NEW CITY"> D. New city</p>
+            </div>
+            <div class="quz-box">
+                <p><b>Q8</b> What is the highest award for musicial achievements?</p>
+                <p><input type="radio" name="question8" id="field medal" value="FIELD MEDAL"> A. Field medal </p>
+                <p><input type="radio" name="question8" id="billboard music awards"
+                        value="BILLBOARD MUSIC AWARD">B. Billboard music awards</p>
+                <p><input type="radio" name="question8" id="grammy awards" value="GRAMMY AWARD">C. Grammy awards</p>
+                <p><input type="radio" name="question8" id="booker prize" value="BOOKER PRIZE"> D. Booker prize</p>
+            </div>
+            <div class="quz-box">
+                <p><b>Q9</b> Who won more than 10 <b>GRAMMY AWRDS?</b></p>
+                <p><input type="radio" name="question9" id="john karty" value="JOHN KARTY"> A. John Karty </p>
+                <p><input type="radio" name="question9" id="star billie ellish" value="STARR BILLIE ELLISH">B. Star Billie Ellish</p>
+                <p><input type="radio" name="question9" id="taylor swift" value="TAYLOR SWIFT">C. Taylor Swift</p>
+                <p><input type="radio" name="question9" id="vidya  fox" value="VIDYA FOX"> D. Vidya  Fox</p>
+            </div>
+            <div class="quz-box">
+                <p> <b>Q10</b> What does <b>BOW</b> mean in music?</p>
+                <p><input type="radio" name="question10" id="stick of a violin" value="STICK OF A VIOLIN"> A. Stick of a violin </p>
+                <p><input type="radio" name="question10" id="4th note of the music" value="4TH NOTE OF THE MUSIC">B. 4th note of the music</p>
+                <p><input type="radio" name="question10" id="strings in violin" value="STRINGS IN VIOLIN">C. Strings in violin</p>
+                <p><input type="radio" name="question10" id="part of the drum" value="PART OF THE DRUMB"> D. Part of the drum</p>
+            </div>
+            <input type="button" name="" value="I AM DONE :)" class="primary-button" onclick="check()">
+
+        </form>
+        </div>
+    </div><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+    <footer>
+        <div class="left">
+            <ul>
+                <li><a href=""> <b> <u>Quick Access</u> </b></a></li> <br>
+                <li><a href="student2_mainpage.html">Home</a></li>
+                <li> <a href="student1_products.html"  > Products Page</a></li>
+                <li> <a href="student3_quiz.html"> Quiz Challenge</a></li>
+                <li> <a href="students4_thumbnail.html">Gallery</a></li>
+                
+            </ul>
+        </div>
+        <div class="devinfo">
+            <ul>
+                <li><a href=""> <b> <u>Developer Info</u> </b></a></li> <br>
+                <li> <a href="">About</a></li>
+                <li> <a href=""> Page Editor</a></li>
+                <li> <a href="students4_diagram.html">Site Map</a></li>
+                
+            </ul>
+        </div>
+        <div class="support">
+            <ul>
+                <li><a href=""> <b> <u>Support</u> </b></a></li> <br>
+                <li> <a href="student2_queryform.html"  >Feedback</a></li>
+                <li> <a href=""  >Contact Us</a></li>
+                
+                
+            </ul>
+        </div>
+   </footer>
+</body>
+<script src="./student_3quiz.js"></script>
+
+</html>

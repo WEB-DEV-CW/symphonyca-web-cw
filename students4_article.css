@@ -1,0 +1,170 @@
+h2 {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    padding-top: 0%;
+    color: black;
+    width:100%;
+   
+    margin-left: 30px;
+    
+}
+
+.menu {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.menu li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 1em 1.5em;
+    padding: 0;
+    
+}
+
+.menu a {
+    padding: .5em 0;
+    color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:before,
+.menu a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.menu a:before {
+    top: 0;
+    display: block;
+    height: 3px;
+    width: 0%;
+    content: "";
+    background-color: #196123;
+}
+
+.menu a:after {
+    left: 0;
+    top: 0;
+    padding: 0.5em 0;
+    position: absolute;
+    content: attr(data-hover);
+    color: #000000;
+    white-space: nowrap;
+    max-width: 0%;
+    overflow: hidden;
+}
+
+.menu a:hover:before,
+.menu .active a:before {
+    opacity: 1;
+    width: 100%;
+}
+
+.menu a:hover:after,
+.menu .active a:after {
+    max-width: 100%;
+}
+
+
+
+.list{
+    position: relative;
+    left: 1200px;
+    top: -50px;
+}
+.left p{
+    position: relative;
+    left: 50px;
+    top: 40px;
+}
+
+footer{
+    background-color: rgb(227, 240, 240);
+    height: 150px;
+    bottom: 0%;
+    border-radius: 10px;
+    padding: 0%;
+    width: 100%;
+}
+
+.list ul li a{
+    text-decoration: none;
+    
+}
+
+header h2{
+    font-size:80;
+    background-color: aliceblue;
+    padding: 10;
+    
+}
+
+.inbody{
+     position: relative;
+     left: 50cm;
+     width: 100%;
+     margin-right: 60px;
+     
+     
+    
+
+}
+img{
+    position: relative;
+    top: 70px;
+    left: 30px;
+}
+
+.support,.devinfo, .left {
+    display:block;
+    float:left;
+    width:33%;
+    margin-left: 0px;
+    font-weight: 700;
+    
+
+   
+
+}
+
+footer li a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type:none
+}
+
+
+.article{
+    display: flex;
+    background-color: burlywood;
+    width:100%;
+    border-radius: 10px;
+}
+
+.article div{
+    background-color: #f1f1f1;
+    margin: 20px;
+    padding: 100px;
+    font-size: 30px;
+    border-radius: 20px;
+
+}
+.articlecontent{
+    margin: 25px;
+
+}

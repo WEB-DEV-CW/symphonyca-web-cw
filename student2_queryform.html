@@ -1,0 +1,119 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUERY FORM</title>
+    <link rel="stylesheet" href="student2_queryform.css">
+</head>
+
+<body>
+    <img src="Logo.png" alt="Image Load Error" width="100" height="50">
+        
+
+      
+    
+
+    <ul class="menu">
+
+          
+        <li> <a href="student2_mainpage.html" data-hover="HOME">HOME</a></li>
+        <li><a href="student2_queryform.html" data-hover="FEEDBACK">FEEDBACK</a></li>
+        <li><a href="student1_products.html" data-hover="Products">Products</a></li>
+        <li> <a href="students4_diagram.html" data-hover="Sitemap">Sitemap</a></li>
+        <li> <a href="student3_quiz.html" data-hover="Quiz Challenge">Quiz Challenge</a></li>
+        <li> <a href="students4_thumbnail.html" data-hover="GALLERY">GALLERY</a> </li>
+        <li> <a href="details.html" data-hover="Student Details">Student Details</a></li>
+
+    </ul>
+
+    <!-- query form -->
+    <h1>QUERY FORM</h1><br>
+
+    <div id="form">
+    <form id="queryform" name="queryform" onname="return validateForm" action="mailto:sethubavan99@gmail.com">
+        <label>Theme:</label>
+            <div id="themes">
+                <input type="radio" id="Delivery" name="theme" value="Delivery">
+                <label for="Delivery">Delivery</label><br>
+                <input type="radio" id="Product Details" name="theme" value="Product Details">
+                <label for="Product Details">Product Details</label><br>
+                <input type="radio" id="Other Services" name="theme" value="Other Services">
+                <label for="Other Services">Other Services</label>
+            </div> <br>
+         
+        <label  for="name"> Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label  for="email">E-mail:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label   for="subject"> Subject:</label>
+        <input type="text" id="subject" name="subject"><br><br>
+        <label  for="Details"> Details:</label>
+        <input type="text" id="details" name="Details"><br><br>
+
+         
+    </form>
+    </div>  
+       <!-- for viewing the queryform -->
+    <p id="1"></p>
+    <p id="2"></p>
+    <p id="3"></p>
+    <p id="4"></p>
+    <p id="5"></p>
+    
+    <br>
+    <!-- buttons section -->
+    <div id="button">  
+    <button  id="submit" type="submit" form="queryform" value="Submit" onclick="return validateForm">Submit</button>
+    <button id="viewquery" onclick="results()">View Query</button>
+    <button id="check" onclick="validateForm()">Check</button>
+    <button id="edit"  onclick="edit()">Edit</button>
+
+
+    </div>
+    <br><br><br>
+    <span id="spanResult">
+
+    </span>
+    
+    <script src="student2_queryform.js">
+       
+    </script>
+     <footer>
+        <div class="left">
+            <ul>
+                <li><a href=""> <b> <u>Quick Access</u> </b></a></li> <br>
+                <li><a href="student2_mainpage.html">Home</a></li>
+                <li> <a href="student1_products.html"  > Products Page</a></li>
+                <li> <a href="student3_quiz.html"> Quiz Challenge</a></li>
+                <li> <a href="students4_thumbnail.html">Gallery</a></li>
+                
+            </ul>
+        </div>
+        <div class="devinfo">
+            <ul>
+                <li><a href=""> <b> <u>Developer Info</u> </b></a></li> <br>
+                <li> <a href="">About</a></li>
+                <li> <a href=""> Page Editor</a></li>
+                <li> <a href="students4_diagram.html">Site Map</a></li>
+                
+            </ul>
+        </div>
+        <div class="support">
+            <ul>
+                <li><a href=""> <b> <u>Support</u> </b></a></li> <br>
+                <li> <a href="student2_queryform.html"  >Feedback</a></li>
+                <li> <a href=""  >Contact Us</a></li>
+                
+                
+            </ul>
+        </div>
+   </footer>
+
+
+
+
+</body>
+
+</html>

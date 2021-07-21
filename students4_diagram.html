@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap</title>
+    <script src="students4_diagram.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="students4_diagram.css">
+</head>
+<body>
+    <div id="top">
+        <img src="Logo.png">
+        <h1>SITEMAP</h1>
+    </div>
+    <svg height="670" width="1300" >
+
+        <g id="presentation" onclick="function1()">
+            <rect x="625" y="40" rx="10" ry="10" width="150" height="75" stroke="purple" stroke-width="4" fill="#ff666999" /> 
+            <text x="637" y="70" font-weight="bold" font-family="" >PRESENTATION</text>
+            <text x="675" y="95" font-weight="bold" font-family="" >PAGE</text>
+        </g>
+
+        <g id="home" onclick="function2()">
+            <rect x="625" y="200" rx="10" ry="10" width="150" height="75" stroke="purple" stroke-width="4" fill="#ff666999" />
+            <text x="675" y="240" font-weight="bold" font-family="" >HOME</text>
+        </g>
+
+        <g id="feedback" onclick="function3()">
+            <rect x="1140" y="430" rx="10" ry="10" width="150" height="75" stroke="purple" stroke-width="4" fill="#ff666999" />
+            <text x="1170" y="475" font-weight="bold" font-family="" >FEEDBACK</text>
+        </g>
+
+        <g id="products" onclick="function4()">
+            <rect x="800" y="550" rx="10" ry="10" width="150" height="75" stroke="purple" stroke-width="4" fill="#ff666999" />
+            <text x="830" y="590" font-weight="bold" font-family="" >PRODUCTS</text>
+        </g>
+
+        <g id="sitemap" onclick="function5()">
+            <rect x="550" y="350" rx="10" ry="10" width="150" height="75" stroke="purple" stroke-width="4" fill="#ff666999" />
+            <text x="590" y="390" font-weight="bold" font-family="" >SITEMAP</text>
+        </g>
+
+        <g id="challenge" onclick="function6()">
+            <rect x="210" y="480" rx="10" ry="10" width="150" height="75" stroke="purple" stroke-width="4" fill="#ff666999" />
+            <text x="260" y="510" font-weight="bold" font-family="" >QUICK</text>
+            <text x="235" y="535" font-weight="bold" font-family="" >CHALLENGE</text>
+        </g>
+
+        <g id="gallery" onclick="function7()">
+            <rect x="120" y="180" rx="10" ry="10" width="150" height="75" stroke="purple" stroke-width="4" fill="#ff666999" />
+            <text x="155" y="220" font-weight="bold" font-family="" >GALLERY</text>
+        </g>
+
+        <g id="details" onclick="function8()">
+            <rect x="950" y="130" rx="10" ry="10" width="150" height="75" stroke="purple" stroke-width="4" fill="#ff666999" />
+            <text x="990" y="160" font-weight="bold" font-family="" >STUDENT</text>
+            <text x="992" y="190" font-weight="bold" font-family="" >DETAILS</text>
+        </g>
+
+        
+        <g id="flow">
+            <!--presentation to home-->
+            <path d="M700,120 L700,195" stroke-width="2" stroke="black"/>
+            <!--home to student details-->
+            <path d="M780,220 L840,220 L890,150 L945,150" stroke-width="2" stroke="black" fill="transparent"/>
+            <!--home to feedback-->
+            <path d="M780,250 L870,250 L1200,350 L1200,425" stroke-width="2" stroke="black" fill="transparent"/>
+            <!--home to products-->
+            <path d="M730,280 L730,300 L875,420 L875,545" stroke-width="2" stroke="black" fill="transparent"/>
+            <!--home to sitemap-->
+            <path d="M680 280, L680 300, L620 320, L620 345 " stroke-width="2" stroke="black" fill="transparent"/>
+            <!--home to challenge-->
+            <path d="M620 220, L480 220, L420 200, L275 200" stroke-width="2" stroke="black" fill="transparent"/>
+            <!--home to gallery-->
+            <path d="M620 260, L400 260, L280 380, L280 470" stroke-width="2" stroke="black" fill="transparent"/>
+        </g>
+
+
+
+
+
+
+
+
+
+    </svg>
+    <footer>
+      <p> <a href="students4_editor.html" style="text-decoration: none;">Click here for Page Editor.</a> </p>
+    </footer>
+</body>
+</html>
