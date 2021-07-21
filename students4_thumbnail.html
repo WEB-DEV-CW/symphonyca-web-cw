@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gallery</title>
+    <script src="students4_thumbnail.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="students4_thumbnail.css">
+  </head>
+  <body>
+
+    <div id="form">
+      <ul>
+        <li><img src="Logo.png" id="img"></li>
+      <h1>GALLERY</h1>
+        <!--<li><button class="dropbtn" id="dropbtn1">Text Colour</button></li>-->
+        <li class="dropdown">
+          <a class="dropbtn" id="dropbtn1">Text Colour</a>
+          <div class="dropdown-content" id="content1">
+            <span id="textClr1" onclick="changeTx('#000000');">Black</span>
+            <span id="textClr2" onclick="changeTx('#ffffff');">White</span>
+            <span id="textClr3" onclick="changeTx('#0b3954');">Blue</span>
+            <span id="textClr4" onclick="changeTx('#ff6663');">Bittersweet</span>
+          </div>
+        </li>
+        <!--<li><button class="dropbtn" id="dropbtn2">Background Colour</button></li>-->
+        <li class="dropdown">
+          <a class="dropbtn" id="dropbtn2">Background Colour</a>
+          <div class="dropdown-content" id="content2">
+            <span id="bgClr1" onclick="changeBg('#d7f171');">Mindaro</span>
+            <span id="bgClr2" onclick="changeBg('#65524d');">Umber</span>
+            <span id="bgClr3" onclick="changeBg('#bd2d87');">Fondango</span>
+            <span id="bgClr4" onclick="changeBg('#9d96b8');">Lavander</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <form>
+        <div id="pictureGallery" class="pics">
+          <img id="img1" src="keyboard.jpg" alt="Keyboard Instruments : any musical instrument on which different notes can be sounded by pressing a series of keys, push buttons, or parallel levers. " class="gallery" onclick="myFunction(this);">
+          <img id="img2" src="brasswind.jpg" alt="Brasswind Instruments : A wind instrument, such as the French horn or the trombone, made of brass or other metal. Sound is produced through vibration of the lips and adjustment of the length of the sound tube by means of valves or a slide." class="gallery" onclick="myFunction(this);">
+          <img id="img3" src="string.jpg" alt="Sring Instruments : a musical instrument (such as a guitar, violin, or piano) that has strings and that produces sound when the strings are touched or struck." class="gallery" onclick="myFunction(this);">
+          <img id="img4" src="woodwind.jpg" alt="Woodwind Instruments : a woodwind is a type of musical instrument that you play by blowing into its mouthpiece. Flutes, clarinets, and oboes are all woodwinds." class="gallery" onclick="myFunction(this);">
+          <img id="img5" src="percussion.jpg" alt="Percussion Instruments : a musical instrument (such as a drum, xylophone, or maraca) sounded by striking, shaking, or scraping." class="gallery" onclick="myFunction(this);">
+        </div>
+        <div class="viewer">
+          
+          <img id="expandedImg">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <div id="imgtext"></div>
+        </div>
+        
+      </form>
+    </div>
+    <footer>
+      <p> <a href="students4_editor.html" style="text-decoration: none;">Click here for Page Editor.</a> </p>
+    </footer>
+
+  </body>
+</html>
