@@ -3,6 +3,7 @@ var i = 0;
 var txt = 'SYMPHONYCA STORE';
 var speed = 90;
 
+// title animation
 function typeWriter() {
   if (i < txt.length) {
     document.getElementById("header").innerHTML += txt.charAt(i);
@@ -24,6 +25,7 @@ function displayItems(itemName, itemPrice, itemImage){
   itemRow.classList.add("item-one");
   var itemNameList = document.getElementsByClassName("cart-item-product");
 
+  // check whethere that clicked image has already added to the cart
   var x;
   for(x=0; x<itemNameList.length; x++){
     if(itemNameList[x].innerText == itemName){
@@ -32,6 +34,7 @@ function displayItems(itemName, itemPrice, itemImage){
     }
   }
 
+  // add content to the cart section with item name, item image, quantity and price
   var rowContent = 
   `<tr>
     <td>
@@ -62,6 +65,7 @@ function displayItems(itemName, itemPrice, itemImage){
 function removeItem(event) {
   var buttonRemove = event.target;
   buttonRemove.parentElement.parentElement.remove();
+  // call the calcTotal function
   calculateTotal();
 }
 
@@ -72,6 +76,7 @@ function getQuantity(event) {
   if (isNaN(checkQuantity.value) || checkQuantity.value <= 0) {
       checkQuantity.value = 1;
   }
+  // call the calcTotal function
   calculateTotal();
 }
 
@@ -85,7 +90,9 @@ function addItemsToCart(event){
   var itemPrice = shopItem.getElementsByClassName("item-price-to-List")[0].innerText;
   var itemImage = shopItem.getElementsByClassName("item-Image")[0].src;
 
+  // call the displayItems function
   displayItems(itemName,itemPrice,itemImage);
+  // call the calcTotal function
   calculateTotal();
 }
 
@@ -106,6 +113,7 @@ function calculateTotal(){
   document.getElementsByClassName("total-price")[0].innerText = 'Rs ' + total + '.00';
 }
 
+// call the typewriter function
 typeWriter();
 
 // Set function to all the addToCart Buttons
@@ -113,6 +121,7 @@ var addToCartBtns = document.getElementsByClassName("addToCart");
 var j;
 for(j=0; j< addToCartBtns.length; j++){
   var addToCartBtn = addToCartBtns[j];
+  // call add to cart item when add to cart button clicked
   addToCartBtn.addEventListener("click", addItemsToCart);
 }
 
@@ -121,6 +130,7 @@ var quantityCheck = document.getElementsByClassName("cart-item-quantity-list");
 var k;
 for (k = 0; k < quantityCheck.length; k++) {
     var checkQuantity = quantityCheck[k];
+    // quantity update
     checkQuantity.addEventListener('change', getQuantity);
 }
 
@@ -130,6 +140,7 @@ var removeToCartButton = document.getElementsByClassName("remove");
 var l;
 for (l = 0; l < removeToCartButton.length; l++) {
     var button = removeToCartButton[l];
+    // remove item from the list when remove button clicked
     button.addEventListener('click', removeItem);
 }
 
@@ -141,6 +152,7 @@ for (l = 0; l < removeToCartButton.length; l++) {
  */
 
 function formValidation(){
+  // set var to form details
   var userName = document.forms["form1"]["userName"].value;
   var userMail = document.forms["form1"]["userMail"].value;
   var userAddress = document.forms["form1"]["userAddress"].value;
@@ -148,6 +160,7 @@ function formValidation(){
   var items = document.getElementsByClassName("item-one");
   var totalPrice = document.getElementById("total-price").innerText;
 
+  // for pop up window
   var modal = document.getElementById("receipt");
   var span = document.getElementsByClassName("close")[0];
 
@@ -167,7 +180,9 @@ function formValidation(){
   }
 
 
+  // check form inputs are empty or not
   if(userName=="" || userMail=="" || userAddress=="" || userCountry==""){
+    // print message to inform that details are not complete
     var emptyForm = `
             <div class = "form-empty-error">Please Fill All The Given Details . . . .</div>
             `
@@ -175,12 +190,14 @@ function formValidation(){
         document.getElementsByClassName("fullContent")[0].innerHTML = emptyForm;
   }else {
     if(items.length == 0) {
+        // print message to inform that cart is empty
       var emptyCart = `
             <div class = "cart-empty-error">Your Cart Is Empty . . . .</div>
             `
 
         document.getElementsByClassName("fullContent")[0].innerHTML = emptyCart;
     }else{
+      // display given details and total
       var displayMsg =
         `Name: ${userName} <br><br> Email: ${userMail} <br><br> Address: ${userAddress} , ${userCountry} <br><br>
         Total: ${totalPrice} <br><br>
@@ -195,6 +212,7 @@ function formValidation(){
   }
 }
 
+// reset form and cart as empty 
 function finalConfirmButton() {
   window.location.replace("student1_products.html");
 }
