@@ -18,6 +18,7 @@ body{
     text-align: center;
 }
 
+/* title design */
 .pageBody .header{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 80px;
@@ -73,6 +74,7 @@ h2 {
     transform: scale(1.1);
 }
 
+/* for all categories */
 .category01, .category02, .category03, .category04 {
     display: flex;
     justify-content: center;
@@ -106,6 +108,7 @@ h2 {
     =================== Form Design =====================
 */
 
+/* input details */
 input {
     width: 60%;
     padding: 12px;
@@ -124,6 +127,7 @@ label {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* place order button */
 .placeOrder {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
@@ -147,6 +151,7 @@ label {
     top: 1px;
 }
 
+/* for all content of the form */
 .shipping_details {
     float: left;
     padding: 1%;
@@ -158,6 +163,7 @@ label {
     ==================      Cart Section     ======================
 */
 
+/* table design */
 .table-class {
     margin-left: auto;
     margin-right: auto;
@@ -175,6 +181,7 @@ label {
     border-bottom: 1px solid black;
 }
 
+/* remove item button */
 .remove {
     background-color: #eb1400;
     border-radius: 5px;
@@ -193,6 +200,7 @@ label {
     background-color: #047900;
 }
 
+/* show total price */
 .total-title {
     margin-right: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -208,6 +216,7 @@ label {
     font-size: 25px;
 }
 
+/* show relevant product image in the cart */
 .cart-img {
     float: left;
     margin-right: 10px;
@@ -217,6 +226,7 @@ label {
     margin-top: 5%;
 }
 
+/* get quantity count */
 input[type="number"] {
     border: 1px solid #56CCF2;
     background-color: #eee;

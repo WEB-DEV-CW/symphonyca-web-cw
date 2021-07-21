@@ -1,441 +1,545 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Buy Products</title>
-        <link rel="stylesheet" href="./student2_main.css">
-        <link rel="stylesheet" href="./student1_products.css">
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Buy Products</title>
+    <link rel="stylesheet" href="./student2_main.css" />
+    <link rel="stylesheet" href="./student1_products.css" />
+  </head>
 
-    <body>
-        <!--
+  <body>
+    <!--
             **********Nav bar*************
         -->
-        <div class="navbar">
-            <img src="Logo.png" alt="Image Load Error" width="100" height="50">
-        
+    <div class="navbar">
+      <img src="Logo.png" alt="Image Load Error" width="100" height="50" />
 
-      
-    
+      <ul class="menu">
+        <ul class="menu">
+           
+            <li> <a href="student2_mainpage.html" data-hover="HOME">HOME</a></li>
+            <li><a href="student2_queryform.html" data-hover="FEEDBACK">FEEDBACK</a></li>
+            <li><a href="student1_products.html" data-hover="Products">Products</a></li>
+            <li> <a href="students4_diagram.html" data-hover="Sitemap">Sitemap</a></li>
+            <li> <a href="student3_quiz.html" data-hover="Quiz Challenge">Quiz Challenge</a></li>
+            <li> <a href="students4_thumbnail.html" data-hover="GALLERY">GALLERY</a> </li>
+            <li> <a href="details.html" data-hover="Student Details">Student Details</a></li>
 
-            <ul class="menu">
+        </ul>
+      </ul>
+    </div>
 
-                
-                <ul class="menu">
-
-                    <li> <a href="student2_mainpage.html" data-hover="HOME">HOME</a></li>
-                    <li><a href="student2_queryform.html" data-hover="FEEDBACK">FEEDBACK</a></li>
-                    <li><a href="student1_products.html" data-hover="Products">Products</a></li>
-                    <li> <a href="students4_diagram.html" data-hover="Sitemap">Sitemap</a></li>
-                    <li> <a href="student3_quiz.html" data-hover="Quiz Challenge">Quiz Challenge</a></li>
-                    <li> <a href="students4_thumbnail.html" data-hover="GALLERY">GALLERY</a> </li>
-                    <li> <a href="details.html" data-hover="Student Details">Student Details</a></li>
-      
-              </ul>
-
-            </ul>
-        </div>
-
-
-        <!--
+    <!--
             ************Body***********
-        -->          
-        <div class="pageBody">
-            <div class="header" id="header"></div>
+        -->
+    <div class="pageBody">
+      <div class="header" id="header"></div>
 
-            <div class="body_container">
+      <div class="body_container">
+        <!--    category 01     -->
+        <h2>Instruments</h2>
 
-                <!--    category 01     -->
-                <h2>Instruments</h2>
-
-                <div class="category01">
-
-                    <!--    Product 01     -->
-                    <div class="product01">
-                        <!-- add image -->
-                        <div class="pro-one">
-                            <img src="products_img/product1.png" alt="Saxophone" style="width: 250px;" id="product01" class="item-Image">
-                            <div class="content"></div>
-                        </div>
-                        <!-- product details -->
-                        <div class="product-info">
-                            <p id="productName" class="item-Name-to-List">Alto Saxophone</p>
-                            <div id="productPrice" class="item-price-to-List">Rs317000.00</div>
-                            <div class="stock">
-                                <p>Availability: In Stock</p>
-                            </div>
-                        </div>
-                        <button class="addToCart">Add to Cart</button>
-                    </div>
-
-                    <!--    Product 02      -->
-                    <div class="product02">
-                        <!-- add image -->
-                        <div class="pro-one">
-                            <img src="products_img/product2.png" alt="Xylophone" style="width: 250px;" id="product02" class="item-Image">
-                            <div class="content"></div>
-                        </div>
-                        <!-- product details -->
-                        <div class="product-info">
-                            <p id="productName" class="item-Name-to-List">Xylophone</p>
-                            <div id="productPrice" class="item-price-to-List">Rs160000.00</div>
-                            <div class="stock">
-                                <p>Availability: In Stock</p>
-                            </div>
-                        </div>
-                        <button class="addToCart">Add to Cart</button>
-                    </div>
-
-                    <!--    Product 03      -->
-                    <div class="product03">
-                        <!-- add image -->
-                        <div class="pro-one">
-                            <img src="products_img/product3.png" alt="Concert-Flute" style="width: 250px;" id="product03" class="item-Image">
-                            <div class="content"></div>
-                        </div>
-                            <!-- product details -->
-                        <div class="product-info">
-                            <p id="productName" class="item-Name-to-List">Concert Flute</p>
-                            <div id="productPrice" class="item-price-to-List">Rs86500.00</div>
-                            <div class="stock">
-                                <p>Availability: In Stock</p>
-                            </div>
-                        </div>
-                        <button class="addToCart">Add to Cart</button>
-                    </div>
-
-                    <!--    Product 04      -->
-                    <div class="product04">
-                        <!-- add image -->
-                        <div class="pro-one">
-                            <img src="products_img/product4.png" alt="Clarinet" style="width: 250px;" id="product04" class="item-Image">
-                            <div class="content"></div>
-                        </div>
-                            <!-- product details -->
-                        <div class="product-info">
-                            <p id="productName" class="item-Name-to-List">Clarinet</p>
-                            <div id="productPrice" class="item-price-to-List">Rs136000.00</div>
-                            <div class="stock">
-                                <p>Availability: In Stock</p>
-                            </div>
-                        </div>
-                        <button class="addToCart">Add to Cart</button>
-                    </div>
-
-                </div>
-
-                <!--    category 02     -->
-
-                <h2>Strings</h2>
-
-                <div class="category02">
-
-                    <!--    Product 01     -->
-                    <div class="product01">
-                        <!-- add image -->
-                        <div class="pro-one">
-                            <img src="products_img/product5.png" alt="Acoustic-Guitar" style="width: 250px;" id="product01" class="item-Image">
-                            <div class="content"></div>
-                        </div>
-                            <!-- product details -->
-                        <div class="product-info">
-                            <p id="productName" class="item-Name-to-List">Acoustic Guitar</p>
-                            <div id="productPrice" class="item-price-to-List">Rs13600.00</div>
-                            <div class="stock">
-                                <p>Availability: In Stock</p>
-                            </div>
-                        </div>
-                        <button class="addToCart">Add to Cart</button>
-                    </div>
-
-                    <!--    Product 02     -->
-                    <div class="product02">
-                        <!-- add image -->
-                        <div class="pro-one">
-                            <img src="products_img/product6.png" alt="Violin" style="width: 250px;" id="product02" class="item-Image">
-                            <div class="content"></div>
-                        </div>
-                            <!-- product details -->
-                        <div class="product-info">
-                            <p id="productName" class="item-Name-to-List">Violin</p>
-                            <div id="productPrice" class="item-price-to-List">Rs16500.00</div>
-                            <div class="stock">
-                                <p>Availability: In Stock</p>
-                            </div>
-                        </div>
-                        <button class="addToCart">Add to Cart</button>
-                    </div>
-
-                    <!--    Product 03     -->
-                    <div class="product03">
-                        <!-- add image -->
-                        <div class="pro-one">
-                            <img src="products_img/product7.png" alt="Mandolin" style="width: 250px;" id="product03" class="item-Image">
-                            <div class="content"></div>
-                        </div>
-                            <!-- product details -->
-                        <div class="product-info">
-                            <p id="productName" class="item-Name-to-List">Mandolin</p>
-                            <div id="productPrice" class="item-price-to-List">Rs20000.00</div>
-                            <div class="stock">
-                                <p>Availability: In Stock</p>
-                            </div>
-                        </div>
-                        <button class="addToCart">Add to Cart</button>
-                    </div>
-
-                    <!--    Product 04     -->
-                    <div class="product04">
-                        <!-- add image -->
-                        <div class="pro-one">
-                            <img src="products_img/product8.png" alt="Ukulele" style="width: 250px;" id="product04" class="item-Image">
-                            <div class="content"></div>
-                        </div>    
-                        <!-- product details -->
-                        <div class="product-info">
-                            <p id="productName" class="item-Name-to-List">Ukulele</p>
-                            <div id="productPrice" class="item-price-to-List">Rs12500.00</div>
-                            <div class="stock">
-                                <p>Availability: In Stock</p>
-                            </div>
-                        </div>
-                        <button class="addToCart">Add to Cart</button>
-                    </div>
-
-                </div>
-
-                <!--    category 03     -->
-
-                <h2>Drums</h2>
-
-                <div class="category03">
-
-                    <!--    Product 01     -->
-                    <div class="product01">
-                        <!-- add image -->
-                        <div class="pro-one">
-                            <img src="products_img/product9.png" alt="Tabla" style="width: 250px;" id="product01" class="item-Image">
-                            <div class="content"></div>
-                        </div>
-                            <!--product details  -->
-                        <div class="product-info">
-                            <p id="productName" class="item-Name-to-List">Indian Tabla Set</p>
-                            <div id="productPrice" class="item-price-to-List">Rs12750.00</div>
-                            <div class="stock">
-                                <p>Availability: In Stock</p>
-                            </div>
-                        </div>
-                        <button class="addToCart">Add to Cart</button>
-                    </div>
-                    
-                    <!--    Product 02     -->
-                    <div class="product02">
-                        <!-- add image -->
-                        <div class="pro-one">
-                            <img src="products_img/product10.png" alt="Bongo" style="width: 250px;" id="product02" class="item-Image">
-                            <div class="content"></div>
-                        </div>
-                            <!-- product details -->
-                        <div class="product-info">
-                            <p id="productName" class="item-Name-to-List">Bongo Drum</p>
-                            <div id="productPrice" class="item-price-to-List">Rs5000.00</div>
-                            <div class="stock">
-                                <p>Availability: In Stock</p>
-                            </div>
-                        </div>
-                        <button class="addToCart">Add to Cart</button>
-                    </div>
-
-                    <!--    Product 03     -->
-                    <div class="product03">
-                        <!-- add image -->
-                        <div class="pro-one">
-                            <img src="products_img/product11.png" alt="Darbuka" style="width: 250px;" id="product03" class="item-Image">
-                            <div class="content"></div>
-                        </div>
-                            <!-- product details -->
-                        <div class="product-info">
-                            <p id="productName" class="item-Name-to-List">Darbuka</p>
-                            <div id="productPrice" class="item-price-to-List">Rs8000.00</div>
-                            <div class="stock">
-                                <p>Availability: In Stock</p>
-                            </div>
-                        </div>
-                        <button class="addToCart">Add to Cart</button>
-                    </div>
-
-                     <!--    Product 04     -->
-                     <div class="product04">
-                         <!-- add image -->
-                        <div class="pro-one">
-                            <img src="products_img/product12.png" alt="Drumset" style="width: 250px;" id="product04" class="item-Image">
-                            <div class="content"></div>
-                        </div>
-                            <!-- product details -->
-                        <div class="product-info">
-                            <p id="productName" class="item-Name-to-List">Drum Set</p>
-                            <div id="productPrice" class="item-price-to-List">Rs80000.00</div>
-                            <div class="stock">
-                                <p>Availability: In Stock</p>
-                            </div>
-                        </div>
-                        <button class="addToCart">Add to Cart</button>
-                    </div>
-
-                </div>
-
-                <!--    category 04     -->
-                <h2>Equipments</h2>
-
-                <div class="category04">
-
-                    <!--    Product 01     -->
-                    <div class="product01">
-                        <!-- add image -->
-                        <div class="pro-one">
-                            <img src="products_img/product13.png" alt="Mic" style="width: 250px;" id="product01" class="item-Image">
-                            <div class="content"></div>
-                        </div>
-                        <!-- product details -->
-                        <div class="product-info">
-                            <p id="productName" class="item-Name-to-List">Professional Vocal Microphone</p>
-                            <div id="productPrice" class="item-price-to-List">Rs15000.00</div>
-                            <div class="stock">
-                                <p>Availability: In Stock</p>
-                            </div>
-                        </div>
-                        <button class="addToCart">Add to Cart</button>
-                    </div>
-
-                    <!--    Product 02     -->
-                    <div class="product02">
-                        <!-- add image -->
-                        <div class="pro-one">
-                            <img src="products_img/product14.png" alt="Tuner" style="width: 250px;" id="product02" class="item-Image">
-                            <div class="content"></div>
-                        </div>
-                            <!-- product details -->
-                        <div class="product-info">
-                            <p id="productName" class="item-Name-to-List">Guitar Tuner</p>
-                            <div id="productPrice" class="item-price-to-List">Rs1000.00</div>
-                            <div class="stock">
-                                <p>Availability: In Stock</p>
-                            </div>
-                        </div>
-                        <button class="addToCart">Add to Cart</button>
-                    </div>
-
-                    <!--    Product 03     -->
-                    <div class="product03">
-                        <!-- add image -->
-                        <div class="pro-one">
-                            <img src="products_img/product15.png" alt="Notation-Stand" style="width: 250px;" id="product03" class="item-Image">
-                            <div class="content"></div>
-                        </div>
-                            <!-- product details -->
-                        <div class="product-info">
-                            <p id="productName" class="item-Name-to-List">Notation/Lyrics Stand</p>
-                            <div id="productPrice" class="item-price-to-List">Rs4000.00</div>
-                            <div class="stock">
-                                <p>Availability: In Stock</p>
-                            </div>
-                        </div>
-                        <button class="addToCart">Add to Cart</button>
-                    </div>
-
-                    <!--    Product 04     -->
-                    <div class="product04">
-                        <!-- add image -->
-                        <div class="pro-one">
-                            <img src="products_img/product16.png" alt="Digital-Mixer" style="width: 250px;" id="product04" class="item-Image">
-                            <div class="content"></div>
-                        </div>
-                            <!-- product details -->
-                        <div class="product-info">
-                            <p id="productName" class="item-Name-to-List">Digital Mixer</p>
-                            <div id="productPrice" class="item-price-to-List">Rs380000.00</div>
-                            <div class="stock">
-                                <p>Availability: In Stock</p>
-                            </div>
-                        </div>
-                        <button class="addToCart">Add to Cart</button>
-                    </div>
-
-                </div>
-
-
-                <!--Shopping Details Section-->
-                <div class="shipping_details">
-                        <h2>Shipping Details</h2>
-                        <form name="form1">
-                            <!-- name -->
-                            <label for="userName" class="userName">Your Name</label><br>
-                            <input type="text" id="userName" name="userName" class="data"><br>
-                            <!-- Email -->
-                            <label for="userMail">Email</label><br>
-                            <input type="email" id="userMail" name="userMail" class="data"><br>
-                            <!-- Shipping Address -->
-                            <label for="userAddress">Shipping Address</label><br>
-                            <input type="text" id="userAddress" name="userAddress" class="data"><br>
-                            <!-- Country -->
-                            <label for="userCountry">Country</label><br>
-                            <input type="text" id="userCountry" name="userCountry" class="data"><br>
-                            <!-- Place Order Button -->
-                            <button type="button" class="placeOrder" id="placeOrder" onclick="formValidation();">Place Order</button>
-                        </form>
-                </div>
-
-
-
-                <!--    Check Cart Section      -->
-                <div class="cart-section" id="cart-section">
-                    <h2>CART</h2>
-                    <table class="table-class">
-                        <tr>
-                            <td>
-                                <div class="cart-item">PRODUCT</div>
-                            </td>
-                            <td>
-                                <div class="cart-price">PRICE</div>
-                            </td>
-                            <td>
-                                <div class="cart-quantity">QUANTITY</div>
-                            </td>
-                        </tr>
-                        <div class="cart-item-list">
-                            <!-- adding cart items -->
-
-                        </div>
-                    </table>
-                    <div class="cart-total">
-                        <span class="total-title">Total</span>
-                        <span class="total-price" id="total-price">Rs00.00</span>
-                    </div>
-
-                </div>
-
-
-
-                <!-- The popup receipt -->
-                <div id="receipt" class="receipt">
-
-                    <!-- Receipt content -->
-                    <div class="receiptContent">
-                        <span class="close">&times;</span> <br>
-                        <h1>Order Confirmation Details</h1>
-                        <div class="fullContent">
-                        </div>
-                    </div>
-
-                </div>
-
+        <div class="category01">
+          <!--    Product 01     -->
+          <div class="product01">
+            <!-- add image -->
+            <div class="pro-one">
+              <img
+                src="products_img/product1.png"
+                alt="Saxophone"
+                style="width: 250px"
+                id="product01"
+                class="item-Image"
+              />
+              <div class="content"></div>
             </div>
+            <!-- product details -->
+            <div class="product-info">
+              <p id="productName" class="item-Name-to-List">Alto Saxophone</p>
+              <div id="productPrice" class="item-price-to-List">
+                Rs317000.00
+              </div>
+              <div class="stock">
+                <p>Availability: In Stock</p>
+              </div>
+            </div>
+            <button class="addToCart">Add to Cart</button>
+          </div>
 
-                    
+          <!--    Product 02      -->
+          <div class="product02">
+            <!-- add image -->
+            <div class="pro-one">
+              <img
+                src="products_img/product2.png"
+                alt="Xylophone"
+                style="width: 250px"
+                id="product02"
+                class="item-Image"
+              />
+              <div class="content"></div>
+            </div>
+            <!-- product details -->
+            <div class="product-info">
+              <p id="productName" class="item-Name-to-List">Xylophone</p>
+              <div id="productPrice" class="item-price-to-List">
+                Rs160000.00
+              </div>
+              <div class="stock">
+                <p>Availability: In Stock</p>
+              </div>
+            </div>
+            <button class="addToCart">Add to Cart</button>
+          </div>
+
+          <!--    Product 03      -->
+          <div class="product03">
+            <!-- add image -->
+            <div class="pro-one">
+              <img
+                src="products_img/product3.png"
+                alt="Concert-Flute"
+                style="width: 250px"
+                id="product03"
+                class="item-Image"
+              />
+              <div class="content"></div>
+            </div>
+            <!-- product details -->
+            <div class="product-info">
+              <p id="productName" class="item-Name-to-List">Concert Flute</p>
+              <div id="productPrice" class="item-price-to-List">Rs86500.00</div>
+              <div class="stock">
+                <p>Availability: In Stock</p>
+              </div>
+            </div>
+            <button class="addToCart">Add to Cart</button>
+          </div>
+
+          <!--    Product 04      -->
+          <div class="product04">
+            <!-- add image -->
+            <div class="pro-one">
+              <img
+                src="products_img/product4.png"
+                alt="Clarinet"
+                style="width: 250px"
+                id="product04"
+                class="item-Image"
+              />
+              <div class="content"></div>
+            </div>
+            <!-- product details -->
+            <div class="product-info">
+              <p id="productName" class="item-Name-to-List">Clarinet</p>
+              <div id="productPrice" class="item-price-to-List">
+                Rs136000.00
+              </div>
+              <div class="stock">
+                <p>Availability: In Stock</p>
+              </div>
+            </div>
+            <button class="addToCart">Add to Cart</button>
+          </div>
         </div>
 
+        <!--    category 02     -->
 
-        <!--
+        <h2>Strings</h2>
+
+        <div class="category02">
+          <!--    Product 01     -->
+          <div class="product01">
+            <!-- add image -->
+            <div class="pro-one">
+              <img
+                src="products_img/product5.png"
+                alt="Acoustic-Guitar"
+                style="width: 250px"
+                id="product01"
+                class="item-Image"
+              />
+              <div class="content"></div>
+            </div>
+            <!-- product details -->
+            <div class="product-info">
+              <p id="productName" class="item-Name-to-List">Acoustic Guitar</p>
+              <div id="productPrice" class="item-price-to-List">Rs13600.00</div>
+              <div class="stock">
+                <p>Availability: In Stock</p>
+              </div>
+            </div>
+            <button class="addToCart">Add to Cart</button>
+          </div>
+
+          <!--    Product 02     -->
+          <div class="product02">
+            <!-- add image -->
+            <div class="pro-one">
+              <img
+                src="products_img/product6.png"
+                alt="Violin"
+                style="width: 250px"
+                id="product02"
+                class="item-Image"
+              />
+              <div class="content"></div>
+            </div>
+            <!-- product details -->
+            <div class="product-info">
+              <p id="productName" class="item-Name-to-List">Violin</p>
+              <div id="productPrice" class="item-price-to-List">Rs16500.00</div>
+              <div class="stock">
+                <p>Availability: In Stock</p>
+              </div>
+            </div>
+            <button class="addToCart">Add to Cart</button>
+          </div>
+
+          <!--    Product 03     -->
+          <div class="product03">
+            <!-- add image -->
+            <div class="pro-one">
+              <img
+                src="products_img/product7.png"
+                alt="Mandolin"
+                style="width: 250px"
+                id="product03"
+                class="item-Image"
+              />
+              <div class="content"></div>
+            </div>
+            <!-- product details -->
+            <div class="product-info">
+              <p id="productName" class="item-Name-to-List">Mandolin</p>
+              <div id="productPrice" class="item-price-to-List">Rs20000.00</div>
+              <div class="stock">
+                <p>Availability: In Stock</p>
+              </div>
+            </div>
+            <button class="addToCart">Add to Cart</button>
+          </div>
+
+          <!--    Product 04     -->
+          <div class="product04">
+            <!-- add image -->
+            <div class="pro-one">
+              <img
+                src="products_img/product8.png"
+                alt="Ukulele"
+                style="width: 250px"
+                id="product04"
+                class="item-Image"
+              />
+              <div class="content"></div>
+            </div>
+            <!-- product details -->
+            <div class="product-info">
+              <p id="productName" class="item-Name-to-List">Ukulele</p>
+              <div id="productPrice" class="item-price-to-List">Rs12500.00</div>
+              <div class="stock">
+                <p>Availability: In Stock</p>
+              </div>
+            </div>
+            <button class="addToCart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!--    category 03     -->
+
+        <h2>Drums</h2>
+
+        <div class="category03">
+          <!--    Product 01     -->
+          <div class="product01">
+            <!-- add image -->
+            <div class="pro-one">
+              <img
+                src="products_img/product9.png"
+                alt="Tabla"
+                style="width: 250px"
+                id="product01"
+                class="item-Image"
+              />
+              <div class="content"></div>
+            </div>
+            <!--product details  -->
+            <div class="product-info">
+              <p id="productName" class="item-Name-to-List">Indian Tabla Set</p>
+              <div id="productPrice" class="item-price-to-List">Rs12750.00</div>
+              <div class="stock">
+                <p>Availability: In Stock</p>
+              </div>
+            </div>
+            <button class="addToCart">Add to Cart</button>
+          </div>
+
+          <!--    Product 02     -->
+          <div class="product02">
+            <!-- add image -->
+            <div class="pro-one">
+              <img
+                src="products_img/product10.png"
+                alt="Bongo"
+                style="width: 250px"
+                id="product02"
+                class="item-Image"
+              />
+              <div class="content"></div>
+            </div>
+            <!-- product details -->
+            <div class="product-info">
+              <p id="productName" class="item-Name-to-List">Bongo Drum</p>
+              <div id="productPrice" class="item-price-to-List">Rs5000.00</div>
+              <div class="stock">
+                <p>Availability: In Stock</p>
+              </div>
+            </div>
+            <button class="addToCart">Add to Cart</button>
+          </div>
+
+          <!--    Product 03     -->
+          <div class="product03">
+            <!-- add image -->
+            <div class="pro-one">
+              <img
+                src="products_img/product11.png"
+                alt="Darbuka"
+                style="width: 250px"
+                id="product03"
+                class="item-Image"
+              />
+              <div class="content"></div>
+            </div>
+            <!-- product details -->
+            <div class="product-info">
+              <p id="productName" class="item-Name-to-List">Darbuka</p>
+              <div id="productPrice" class="item-price-to-List">Rs8000.00</div>
+              <div class="stock">
+                <p>Availability: In Stock</p>
+              </div>
+            </div>
+            <button class="addToCart">Add to Cart</button>
+          </div>
+
+          <!--    Product 04     -->
+          <div class="product04">
+            <!-- add image -->
+            <div class="pro-one">
+              <img
+                src="products_img/product12.png"
+                alt="Drumset"
+                style="width: 250px"
+                id="product04"
+                class="item-Image"
+              />
+              <div class="content"></div>
+            </div>
+            <!-- product details -->
+            <div class="product-info">
+              <p id="productName" class="item-Name-to-List">Drum Set</p>
+              <div id="productPrice" class="item-price-to-List">Rs80000.00</div>
+              <div class="stock">
+                <p>Availability: In Stock</p>
+              </div>
+            </div>
+            <button class="addToCart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!--    category 04     -->
+        <h2>Equipments</h2>
+
+        <div class="category04">
+          <!--    Product 01     -->
+          <div class="product01">
+            <!-- add image -->
+            <div class="pro-one">
+              <img
+                src="products_img/product13.png"
+                alt="Mic"
+                style="width: 250px"
+                id="product01"
+                class="item-Image"
+              />
+              <div class="content"></div>
+            </div>
+            <!-- product details -->
+            <div class="product-info">
+              <p id="productName" class="item-Name-to-List">
+                Professional Vocal Microphone
+              </p>
+              <div id="productPrice" class="item-price-to-List">Rs15000.00</div>
+              <div class="stock">
+                <p>Availability: In Stock</p>
+              </div>
+            </div>
+            <button class="addToCart">Add to Cart</button>
+          </div>
+
+          <!--    Product 02     -->
+          <div class="product02">
+            <!-- add image -->
+            <div class="pro-one">
+              <img
+                src="products_img/product14.png"
+                alt="Tuner"
+                style="width: 250px"
+                id="product02"
+                class="item-Image"
+              />
+              <div class="content"></div>
+            </div>
+            <!-- product details -->
+            <div class="product-info">
+              <p id="productName" class="item-Name-to-List">Guitar Tuner</p>
+              <div id="productPrice" class="item-price-to-List">Rs1000.00</div>
+              <div class="stock">
+                <p>Availability: In Stock</p>
+              </div>
+            </div>
+            <button class="addToCart">Add to Cart</button>
+          </div>
+
+          <!--    Product 03     -->
+          <div class="product03">
+            <!-- add image -->
+            <div class="pro-one">
+              <img
+                src="products_img/product15.png"
+                alt="Notation-Stand"
+                style="width: 250px"
+                id="product03"
+                class="item-Image"
+              />
+              <div class="content"></div>
+            </div>
+            <!-- product details -->
+            <div class="product-info">
+              <p id="productName" class="item-Name-to-List">
+                Notation/Lyrics Stand
+              </p>
+              <div id="productPrice" class="item-price-to-List">Rs4000.00</div>
+              <div class="stock">
+                <p>Availability: In Stock</p>
+              </div>
+            </div>
+            <button class="addToCart">Add to Cart</button>
+          </div>
+
+          <!--    Product 04     -->
+          <div class="product04">
+            <!-- add image -->
+            <div class="pro-one">
+              <img
+                src="products_img/product16.png"
+                alt="Digital-Mixer"
+                style="width: 250px"
+                id="product04"
+                class="item-Image"
+              />
+              <div class="content"></div>
+            </div>
+            <!-- product details -->
+            <div class="product-info">
+              <p id="productName" class="item-Name-to-List">Digital Mixer</p>
+              <div id="productPrice" class="item-price-to-List">
+                Rs380000.00
+              </div>
+              <div class="stock">
+                <p>Availability: In Stock</p>
+              </div>
+            </div>
+            <button class="addToCart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!--Shopping Details Section-->
+        <div class="shipping_details">
+          <h2>Shipping Details</h2>
+          <form name="form1">
+            <!-- name -->
+            <label for="userName" class="userName">Your Name</label><br />
+            <input
+              type="text"
+              id="userName"
+              name="userName"
+              class="data"
+            /><br />
+            <!-- Email -->
+            <label for="userMail">Email</label><br />
+            <input
+              type="email"
+              id="userMail"
+              name="userMail"
+              class="data"
+            /><br />
+            <!-- Shipping Address -->
+            <label for="userAddress">Shipping Address</label><br />
+            <input
+              type="text"
+              id="userAddress"
+              name="userAddress"
+              class="data"
+            /><br />
+            <!-- Country -->
+            <label for="userCountry">Country</label><br />
+            <input
+              type="text"
+              id="userCountry"
+              name="userCountry"
+              class="data"
+            /><br />
+            <!-- Place Order Button -->
+            <button
+              type="button"
+              class="placeOrder"
+              id="placeOrder"
+              onclick="formValidation();"
+            >
+              Place Order
+            </button>
+          </form>
+        </div>
+
+        <!--    Check Cart Section      -->
+        <div class="cart-section" id="cart-section">
+          <h2>CART</h2>
+          <table class="table-class">
+            <tr>
+              <td>
+                <div class="cart-item">PRODUCT</div>
+              </td>
+              <td>
+                <div class="cart-price">PRICE</div>
+              </td>
+              <td>
+                <div class="cart-quantity">QUANTITY</div>
+              </td>
+            </tr>
+            <div class="cart-item-list">
+              <!-- adding cart items -->
+            </div>
+          </table>
+          <div class="cart-total">
+            <span class="total-title">Total</span>
+            <span class="total-price" id="total-price">Rs00.00</span>
+          </div>
+        </div>
+
+        <!-- The popup receipt -->
+        <div id="receipt" class="receipt">
+          <!-- Receipt content -->
+          <div class="receiptContent">
+            <span class="close">&times;</span> <br />
+            <h1>Order Confirmation Details</h1>
+            <div class="fullContent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
             *********Footer**********
         -->
     <footer>
@@ -453,7 +557,7 @@
             <ul>
                 <li><a href=""> <b> <u>Developer Info</u> </b></a></li> <br>
                 <li> <a href="">About</a></li>
-                <li> <a href=""> Page Editor</a></li>
+                <li> <a href="student1_page_editor.html"> Page Editor</a></li>
                 <li> <a href="students4_diagram.html">Site Map</a></li>
                 
             </ul>
@@ -469,6 +573,6 @@
         </div>
     </footer>
 
-        <script src="./student1_products.js"></script>
-    </body>
+    <script src="./student1_products.js"></script>
+  </body>
 </html>
