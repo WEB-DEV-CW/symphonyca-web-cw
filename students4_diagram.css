@@ -2,34 +2,9 @@ body {
     background-color: bisque;
 }
 
-img {
-    height: 10%;
-    width: 10%;
-    float: left;
+.content {
+    background-color: bisque;
+    height: 650px;
+ 
 }
 
-#top {
-    padding: 1% 10% 1% 1%;
-    background: rgb(240, 212, 138);
-    color: white;
-}
-
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: auto;
-    color: white;
-    text-align: center;
-  }
-
-  h1 {
-      /*float:;*/
-      margin-top: 6px;
-      margin-bottom: 6px;
-      text-align: center;
-      font-family: bradley hand;
-      letter-spacing: 34px;
-      color: rgba(0, 0, 0, 0.6);
-  }

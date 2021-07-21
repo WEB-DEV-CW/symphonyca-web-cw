@@ -2,13 +2,8 @@ body {
     background-color:#9d96b8;
   }
   
-img {
-  height: 10%;
-  width: 10%;
-  padding: 10px;
-}
 
-ul {
+.form ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -16,7 +11,7 @@ ul {
   background-color: #7d90b4;
 }
 
-li {
+.form li {
   float: left;
 }
 
@@ -53,7 +48,7 @@ li {
   color: rgba(167, 167, 167, 0.685);
   padding: 14px 47px;
   margin-top: 58px;
-  margin-left: 19px;
+  margin-left: 146.5px;
   background-color: rgba(29, 29, 27, 0.685);
 }
 
@@ -80,6 +75,7 @@ li {
   display:grid;
 }
 
+/*not clicked*/
 .gallery {
   height: 18%;
   width: 18%;
@@ -88,33 +84,35 @@ li {
   border-radius: 20px;
   margin-top: 10px;
   margin-left: 0px;
-  margin-right: 0px;
+  margin-right: 26px;
   position: relative;
 }
 
+/*clicked*/
 .gallery2 {
   height: 10%;
   width: 10%;
   float:left;
   display: block;
   border-radius: 20px;
-  margin-top: 10px;
+  margin-top: 65px;
   margin-left: 0px;
-  margin-right: 100px;
+  margin-right: 23px;
   position: relative;
 }
 
+/*clicked*/
 .pics2 {
   margin-left: 135px;
   
 }
 
+/*not clicked*/
 .pics {
   margin-left: 40px;
-  margin-top: 14%;
+  padding-top: 13%;
 }
 
-.pics .gallery:hover {opacity: 1px;}
 
 .viewer {
   width:560px;
@@ -156,24 +154,8 @@ li {
   padding: 0px;
 }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: auto;
-  color: white;
-  text-align: center;
-}
 
-h1 {
-  /*float:;*/
-  margin-top: 14px;
-  margin-bottom: 6px;
-  text-align: center;
-  font-family: bradley hand;
-  letter-spacing: 34px;
-  color: rgba(0, 0, 0, 0.6);
-  margin-left: 528px;
-  position: absolute;
-}
+.content {
+  color:#9d96b8;
+  height: 675px;
+  }

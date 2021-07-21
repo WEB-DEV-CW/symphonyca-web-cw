@@ -10,6 +10,7 @@ function myFunction(imgs) {
 
 function changeBg(color){
     document.body.style.background = color;
+ 
 }
 
 function changeTx(color){
@@ -27,8 +28,7 @@ function changeTx(color){
 }
 
 function changePosition() {
-    //var element = document.getElementById("pictureGallery");
-    //element.classList.toggle("pics2");
+
     document.getElementById("pictureGallery").className = "pics2";
     changePosition2();
 }
@@ -40,14 +40,4 @@ function changePosition() {
     document.getElementById("img4").className = "gallery2";
     document.getElementById("img5").className = "gallery2";
 
-    //var element = document.getElementById("img1");
-    //element.classList.change("gallery2");
-    //var element = document.getElementById("img2");
-    //element.classList.toggle("gallery2");
-    //var element = document.getElementById("img3");
-    //element.classList.toggle("gallery2");
-    //var element = document.getElementById("img4");
-    //element.classList.toggle("gallery2");
-    //var element = document.getElementById("img5");
-    //element.classList.toggle("gallery2");
 }
